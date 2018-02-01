@@ -1,0 +1,19 @@
+{
+    "name": "s22h/php-router",
+    "description": "A small PHP router.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "S22H",
+            "email": "o_o@trollsoft.net"
+        }
+    ],
+    "require": {
+    },
+	"autoload": {
+		"psr-4": {
+			"s22h\\": "src/"
+		}
+	}
+}
