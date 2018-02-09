@@ -106,6 +106,13 @@ class Router {
 			return false;
 		}
 
+		// trim the query string from the uri
+		$qsPos = strpos($uri, '?');
+
+		if ($qsPos !== false) {
+			$uri = substr($uri, 0, $qsPos);
+		}
+
 		$routes = $this->routes[$method];
 		$len = strlen($uri);
 		$pos = 0;
